@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Sign Up!</h2>
+    <form class="form">
+      
+      
+      <!-- name -->
+      <div class="formm">
+        <label for="Name">Full Name</label>
+      <input type="text" value="" placeholder="Enter your name" class="name" required minlength="3" maxlength="30" name="name">
+  </div>
+  
+  
+   <!-- Phone -->
+      <div class="formm">
+        <label for="Phone">Phone Number</label>
+      <input type="tel" placeholder="Enter your Phone Number" class="tel" required pattern="[0-9]{10}" maxlength="12" minlength="10" name="phone">
+  </div>
+      
+      
+   <!-- name -->
+      <div class="formm">
+        <label for="Email">Enter Email</label>
+      <input type="email" value="" placeholder="example@gmail.com" class="email" name="mail" required>
+  </div>
+      
+      
+   <!-- name -->
+      <div class="formm">
+        <label for="Website">Website</label>
+      <input type="web" value="" class="web" placeholder="www.yorwebsite.com" name="website">
+  </div>
+      
+  
+     <!-- passwd -->
+     <div class="formm">
+       <label for="passwd">Password </label>
+       <input type="password" value="" placeholder="Enter your Password" class="pas" pattern="^.*(?=.{8,})(?=.*[a-zA-Z])(?=.*\d)(?=.*[!#$%&? ]).*$" required minlength="8" maxlength="12">
+     </div>
+  
+     <!-- name -->
+     <div class="formm">
+       <label for="Name">Confirm Password</label>
+       <input type="password" value="" placeholder="Confirm Password" class="pass" pattern="^.*(?=.{8,})(?=.*[a-zA-Z])(?=.*\d)(?=.*[!#$%&? ]).*$" required minlength="8" maxlength="12" name="password">
+     </div>
+     
+     <button type="submit" class="btn">Submit</button>
+  
+    </form>
+    
+    <div class="error">
+      <h3 class="htree">Dont panic</h3>
+    </div>
+  </div>
+  
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
